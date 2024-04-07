@@ -6,23 +6,26 @@ html {
 .header {
     margin-top: 0px;
     margin: 0 auto;
-    max-width: 1440px;
+    max-width: 100%;
     height: 900px;
     background-image: url(../images/header-background-images.png);
+    background-size: cover;
 }
 
 .max-container {
     margin: 0 auto;
-    max-width: 1440px;
+    max-width: 100%;
     height: 100%;
 }
 
 nav {
-    width: 1440px;
+    width: 100%;
     height: 95px;
     background-color: #305346E5;
     box-shadow: 0px 4px 20px;
-    position: fixed;
+    position: sticky;
+    top: 0;
+    margin-top: 0px;
 }
 
 .container {
@@ -158,6 +161,7 @@ a {
 }
 
 .cart1 {
+    cursor: pointer;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -181,6 +185,7 @@ a {
 }
 
 .cart2 {
+    cursor: pointer;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -192,6 +197,7 @@ a {
 }
 
 .cart3 {
+    cursor: pointer;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -203,6 +209,7 @@ a {
 }
 
 .cart4 {
+    cursor: pointer;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -225,8 +232,9 @@ a {
     display: flex;
     justify-content: center;
     align-items:center;
+    margin: 0 auto;
     margin-top: 400px;
-    max-width: 1448px;
+    max-width: 1440px;
     height: 206px;
     background-image: url(../images/middle-images.png);
     border-radius: 22px;
@@ -240,15 +248,39 @@ a {
     text-shadow: 0px 5px 40px #a27ce0;
 }
 
+.main-middle-input {
+    display: flex;
+    padding: 10px 0;
+    padding-left: 70px;
+    margin: 30px auto 10px auto;
+    outline-color: #6e2fd3;
+    /* width: 600px; */
+    /* height: 60px; */
+    box-shadow: #6e2fd3 0px 0px 30px 10px;
+    border-radius: 14px;
+    font-size: 32px;
+    font-weight: 400;
+    border: none;
+    color:  #32a35c;
+}
+
 .section-card-wrapper {
     margin-top: 40px;
     display: flex;
     flex-direction: column;
 }
 
+a {
+    list-style: none;
+    color: black;
+}
+
 .card-wrapper {
     display: flex;
+    flex-wrap: wrap;
     gap: 30px;
+    justify-content: center;
+    align-items: center;
 }
 
 .card {
@@ -256,10 +288,17 @@ a {
     flex-direction: column;
     width: 350px;
     height: 435px;
+    color: #f487b1;
     overflow: hidden;
-    transition: all 0.3s ease-out;
     border-radius: 18px;
     cursor: pointer;
+    background: linear-gradient(#ffff, rgb(241, 241, 103), #e85e92);
+    transition: all 0.6s ease-in-out;
+}
+
+.card:hover {
+    transition: all 0.5s ease-in-out;
+    background: linear-gradient(#ffff, rgb(249, 249, 53), #cd356f);
 }
 
 .images {
@@ -274,15 +313,14 @@ a {
 }
 
 .cadr-images {
-    width: 350px;
+    width: 400px;
     height: 350px;
-    transition: all 0.3s ease-out;
+    transition: all 0.5s ease-out;
 }
 
 .cadr-images:hover {
-    transition: all 0.3s ease-out;
-    width: 415px;
-    height: 415px;
+    transition: all 0.6s ease-out;
+    width: 430px;
 }
 
 .card-text {
